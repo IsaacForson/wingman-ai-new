@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wingman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Wingman</h1>
+      <a href="options.html" target="_blank" id="settings">Pairing</a>
+    </header>
+    <section id="empty" class="muted">
+      Select text on a page, right-click and choose “Explain with Wingman”, or press <kbd id="shortcut">Ctrl+Shift+Y</kbd>.
+    </section>
+    <section id="request" hidden>
+      <p class="label" id="instruction"></p>
+      <blockquote id="selection"></blockquote>
+    </section>
+    <section id="status" class="muted" hidden></section>
+    <article id="answer" hidden></article>
+    <footer id="footer" hidden>
+      <button id="copy">Copy</button>
+      <span id="meta" class="muted"></span>
+    </footer>
+  </main>
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>

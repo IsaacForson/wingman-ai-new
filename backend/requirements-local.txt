@@ -1,0 +1,3 @@
+# Optional: offline transcription with faster-whisper (adds ~200 MB of models on first use)
+-r requirements.txt
+faster-whisper==1.2.1

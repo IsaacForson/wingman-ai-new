@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' ws://localhost:* http://localhost:* ws://127.0.0.1:* http://127.0.0.1:*; img-src 'self' data:;">
+    <title>Wingman AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Fully transparent window - clicks pass through empty areas */
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        background: transparent !important;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      /* Drag region for frameless window */
+      .drag-region {
+        -webkit-app-region: drag;
+      }
+      .no-drag {
+        -webkit-app-region: no-drag;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/renderer/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Wingman extension – pairing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="options">
+  <main>
+    <h1>Pair with Wingman</h1>
+    <ol>
+      <li>Open the Wingman desktop app.</li>
+      <li>Go to Settings → Browser extension and copy the pairing key.</li>
+      <li>Paste it here and save.</li>
+    </ol>
+    <label for="key">Pairing key</label>
+    <div class="row">
+      <input id="key" type="password" autocomplete="off" placeholder="Paste pairing key" />
+      <button id="save">Save</button>
+    </div>
+    <p id="result" class="muted" role="status"></p>
+    <p class="muted small">The key only lets this extension ask Wingman about text you select. It can't read your conversations or settings, and nothing is sent anywhere except the Wingman app on this computer and the AI provider you chose in it.</p>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

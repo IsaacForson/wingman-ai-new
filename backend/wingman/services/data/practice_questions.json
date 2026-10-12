@@ -1,0 +1,476 @@
+[
+  {
+    "id": "bh1",
+    "question": "Tell me about a time you faced a challenging situation at work and how you handled it.",
+    "category": "problem_solving",
+    "type": "behavioral",
+    "difficulty": "medium",
+    "hints": [
+      "Use the STAR method",
+      "Focus on your specific actions"
+    ],
+    "key_points": [
+      "Specific situation",
+      "Actions taken",
+      "Measurable results",
+      "Lessons learned"
+    ]
+  },
+  {
+    "id": "bh2",
+    "question": "Describe a time when you had to work with a difficult team member.",
+    "category": "teamwork",
+    "type": "behavioral",
+    "difficulty": "medium",
+    "hints": [
+      "Stay professional",
+      "Focus on resolution"
+    ],
+    "key_points": [
+      "Conflict description",
+      "Communication approach",
+      "Resolution",
+      "Relationship outcome"
+    ]
+  },
+  {
+    "id": "bh3",
+    "question": "Tell me about your greatest professional achievement.",
+    "category": "accomplishments",
+    "type": "behavioral",
+    "difficulty": "easy",
+    "hints": [
+      "Quantify your impact",
+      "Explain why it mattered"
+    ],
+    "key_points": [
+      "Context",
+      "Your role",
+      "Quantifiable results",
+      "Impact"
+    ]
+  },
+  {
+    "id": "bh4",
+    "question": "How do you handle tight deadlines and pressure?",
+    "category": "stress_management",
+    "type": "behavioral",
+    "difficulty": "easy",
+    "hints": [
+      "Give specific examples",
+      "Show your strategies"
+    ],
+    "key_points": [
+      "Prioritization",
+      "Time management",
+      "Stress management",
+      "Example"
+    ]
+  },
+  {
+    "id": "bh5",
+    "question": "Describe a time when you failed. What did you learn?",
+    "category": "growth",
+    "type": "behavioral",
+    "difficulty": "hard",
+    "hints": [
+      "Be honest",
+      "Focus on learning"
+    ],
+    "key_points": [
+      "Honest failure description",
+      "Accountability",
+      "Lessons learned",
+      "How you've grown"
+    ]
+  },
+  {
+    "id": "tc1",
+    "question": "Explain the difference between a stack and a queue.",
+    "category": "data_structures",
+    "type": "technical",
+    "difficulty": "easy",
+    "hints": [
+      "Think about LIFO vs FIFO"
+    ],
+    "key_points": [
+      "LIFO vs FIFO",
+      "Use cases",
+      "Operations complexity"
+    ]
+  },
+  {
+    "id": "tc2",
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "category": "databases",
+    "type": "technical",
+    "difficulty": "medium",
+    "hints": [
+      "Consider structure, scalability, use cases"
+    ],
+    "key_points": [
+      "Schema differences",
+      "Scalability",
+      "ACID vs BASE",
+      "Use cases"
+    ]
+  },
+  {
+    "id": "tc3",
+    "question": "Explain how HTTP works. What happens when you type a URL in a browser?",
+    "category": "networking",
+    "type": "technical",
+    "difficulty": "medium",
+    "hints": [
+      "DNS, TCP, HTTP request/response"
+    ],
+    "key_points": [
+      "DNS resolution",
+      "TCP handshake",
+      "HTTP request",
+      "Response rendering"
+    ]
+  },
+  {
+    "id": "tc4",
+    "question": "What is the difference between processes and threads?",
+    "category": "operating_systems",
+    "type": "technical",
+    "difficulty": "medium",
+    "hints": [
+      "Think about memory, communication, overhead"
+    ],
+    "key_points": [
+      "Memory space",
+      "Communication",
+      "Overhead",
+      "Use cases"
+    ]
+  },
+  {
+    "id": "cd1",
+    "question": "Write a function to reverse a string.",
+    "category": "strings",
+    "type": "coding",
+    "difficulty": "easy",
+    "hints": [
+      "Consider edge cases",
+      "Think about in-place vs new string"
+    ],
+    "key_points": [
+      "Correct logic",
+      "Edge cases",
+      "Time complexity",
+      "Space complexity"
+    ]
+  },
+  {
+    "id": "cd2",
+    "question": "Implement a function to find if a linked list has a cycle.",
+    "category": "linked_lists",
+    "type": "coding",
+    "difficulty": "medium",
+    "hints": [
+      "Floyd's cycle detection",
+      "Two pointers"
+    ],
+    "key_points": [
+      "Algorithm choice",
+      "Edge cases",
+      "Optimal solution",
+      "Code quality"
+    ]
+  },
+  {
+    "id": "cd3",
+    "question": "Given an array of integers, find two numbers that add up to a target sum.",
+    "category": "arrays",
+    "type": "coding",
+    "difficulty": "easy",
+    "hints": [
+      "Hash map for O(n)",
+      "Sorted array + two pointers"
+    ],
+    "key_points": [
+      "Multiple approaches",
+      "Optimal O(n) solution",
+      "Edge cases",
+      "Clean code"
+    ]
+  },
+  {
+    "id": "sd1",
+    "question": "Design a URL shortening service like bit.ly.",
+    "category": "system_design",
+    "type": "system_design",
+    "difficulty": "medium",
+    "hints": [
+      "Start with requirements",
+      "Consider scale",
+      "Database choice"
+    ],
+    "key_points": [
+      "Requirements gathering",
+      "API design",
+      "Database schema",
+      "Scalability"
+    ]
+  },
+  {
+    "id": "sd2",
+    "question": "Design a rate limiter.",
+    "category": "system_design",
+    "type": "system_design",
+    "difficulty": "medium",
+    "hints": [
+      "Token bucket, sliding window",
+      "Distributed considerations"
+    ],
+    "key_points": [
+      "Algorithm choice",
+      "Distributed system",
+      "Storage",
+      "Edge cases"
+    ]
+  },
+  {
+    "id": "bh6",
+    "question": "Tell me about a time you had to influence someone without having authority over them.",
+    "category": "behavioral",
+    "type": "behavioral",
+    "difficulty": "medium",
+    "hints": [
+      "Show how you built trust"
+    ],
+    "key_points": [
+      "Stakeholder's position",
+      "Your approach",
+      "Evidence or data used",
+      "Outcome"
+    ]
+  },
+  {
+    "id": "bh7",
+    "question": "Describe a decision you made with incomplete information.",
+    "category": "behavioral",
+    "type": "behavioral",
+    "difficulty": "hard",
+    "hints": [
+      "Explain your reasoning, not just the result"
+    ],
+    "key_points": [
+      "Constraints",
+      "Risks considered",
+      "Decision",
+      "What you'd do differently"
+    ]
+  },
+  {
+    "id": "bh8",
+    "question": "Tell me about feedback you received that changed how you work.",
+    "category": "behavioral",
+    "type": "behavioral",
+    "difficulty": "medium",
+    "hints": [
+      "Be specific about the change"
+    ],
+    "key_points": [
+      "The feedback",
+      "Your reaction",
+      "Concrete change",
+      "Result"
+    ]
+  },
+  {
+    "id": "bh9",
+    "question": "Describe a time you had to prioritize between several urgent tasks.",
+    "category": "behavioral",
+    "type": "behavioral",
+    "difficulty": "easy",
+    "hints": [
+      "Name the criteria you used"
+    ],
+    "key_points": [
+      "Competing tasks",
+      "Prioritization method",
+      "Communication",
+      "Outcome"
+    ]
+  },
+  {
+    "id": "bh10",
+    "question": "Tell me about a project you led from start to finish.",
+    "category": "behavioral",
+    "type": "behavioral",
+    "difficulty": "medium",
+    "hints": [
+      "Quantify scope and impact"
+    ],
+    "key_points": [
+      "Goal",
+      "Your role",
+      "Key decisions",
+      "Measurable result"
+    ]
+  },
+  {
+    "id": "bh11",
+    "question": "Why do you want to work here?",
+    "category": "behavioral",
+    "type": "behavioral",
+    "difficulty": "easy",
+    "hints": [
+      "Connect your goals to the company's"
+    ],
+    "key_points": [
+      "Specific knowledge of the company",
+      "Fit with your experience",
+      "What you'd contribute"
+    ]
+  },
+  {
+    "id": "tc5",
+    "question": "What happens when a process runs out of memory, and how would you investigate it?",
+    "category": "technical",
+    "type": "technical",
+    "difficulty": "medium",
+    "hints": [
+      "Think about the OS, the runtime and tools"
+    ],
+    "key_points": [
+      "OOM killer / exceptions",
+      "Heap vs stack",
+      "Profiling tools",
+      "Common causes"
+    ]
+  },
+  {
+    "id": "tc6",
+    "question": "Explain the difference between processes and threads.",
+    "category": "technical",
+    "type": "technical",
+    "difficulty": "easy",
+    "hints": [
+      "Memory and scheduling"
+    ],
+    "key_points": [
+      "Address space",
+      "Context switching cost",
+      "Communication",
+      "When to use each"
+    ]
+  },
+  {
+    "id": "tc7",
+    "question": "How does HTTPS keep data secure in transit?",
+    "category": "technical",
+    "type": "technical",
+    "difficulty": "medium",
+    "hints": [
+      "TLS handshake"
+    ],
+    "key_points": [
+      "Certificates and trust",
+      "Key exchange",
+      "Symmetric encryption",
+      "Integrity"
+    ]
+  },
+  {
+    "id": "tc8",
+    "question": "What is database indexing and when can an index hurt performance?",
+    "category": "technical",
+    "type": "technical",
+    "difficulty": "medium",
+    "hints": [
+      "B-trees, write cost"
+    ],
+    "key_points": [
+      "How indexes work",
+      "Read speedup",
+      "Write and storage cost",
+      "Selectivity"
+    ]
+  },
+  {
+    "id": "cd4",
+    "question": "Write a function that returns the first non-repeating character in a string.",
+    "category": "coding",
+    "type": "coding",
+    "difficulty": "easy",
+    "hints": [
+      "Two passes with a hash map"
+    ],
+    "key_points": [
+      "Counting approach",
+      "Order preservation",
+      "O(n) time",
+      "Edge cases"
+    ]
+  },
+  {
+    "id": "cd5",
+    "question": "Given a list of intervals, merge all overlapping intervals.",
+    "category": "coding",
+    "type": "coding",
+    "difficulty": "medium",
+    "hints": [
+      "Sort by start first"
+    ],
+    "key_points": [
+      "Sorting",
+      "Merge condition",
+      "O(n log n)",
+      "Edge cases"
+    ]
+  },
+  {
+    "id": "cd6",
+    "question": "Design an LRU cache with O(1) get and put.",
+    "category": "coding",
+    "type": "coding",
+    "difficulty": "hard",
+    "hints": [
+      "Hash map plus doubly linked list"
+    ],
+    "key_points": [
+      "Data structures",
+      "Eviction",
+      "Complexity",
+      "Edge cases"
+    ]
+  },
+  {
+    "id": "sd3",
+    "question": "Design a notification system that sends email, SMS and push messages.",
+    "category": "system_design",
+    "type": "system_design",
+    "difficulty": "hard",
+    "hints": [
+      "Queues and retries"
+    ],
+    "key_points": [
+      "Requirements",
+      "Fan-out and queues",
+      "Retries and idempotency",
+      "Rate limits",
+      "User preferences"
+    ]
+  },
+  {
+    "id": "sd4",
+    "question": "Design a rate limiter for a public API.",
+    "category": "system_design",
+    "type": "system_design",
+    "difficulty": "medium",
+    "hints": [
+      "Token bucket vs sliding window"
+    ],
+    "key_points": [
+      "Algorithms",
+      "Where it runs",
+      "Distributed state",
+      "Client feedback (429)"
+    ]
+  }
+]
