@@ -5,6 +5,7 @@ a = Analysis(
     ["main.py"],
     datas=[("wingman/services/data/*.json", "wingman/services/data")],
     hiddenimports=collect_submodules("uvicorn") + collect_submodules("engineio.async_drivers") + ["webrtcvad"],
+    hookspath=["pyinstaller-hooks"],
     excludes=["tkinter", "matplotlib", "torch", "tensorflow"],
     noarchive=False,
 )

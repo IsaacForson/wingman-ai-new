@@ -29,6 +29,11 @@ export class BackendManager {
   private child: ChildProcess | null = null
   private stopping = false
   private restarts: number[] = []
+  // Guards against concurrent callers (main + renderer IPC) each spawning
+  // their own backend process. Without this, the second spawn fights the
+  // first for port 8765, dies, retries, and the renderer ends up holding a
+  // token that doesn't match the backend that actually bound the port.
+  private ensurePromise: Promise<BackendConnection> | null = null
 
   constructor(private readonly onRestart: (conn: BackendConnection) => void = () => {}) {}
 
@@ -36,7 +41,17 @@ export class BackendManager {
     return this.token ? { url: this.url, token: this.token } : null
   }
 
-  async ensure(): Promise<BackendConnection> {
+  ensure(): Promise<BackendConnection> {
+    if (!this.ensurePromise) {
+      this.ensurePromise = this._ensure().catch((err) => {
+        this.ensurePromise = null
+        throw err
+      })
+    }
+    return this.ensurePromise
+  }
+
+  private async _ensure(): Promise<BackendConnection> {
     if (this.connection && (await this.healthy())) return this.connection
     if (await this.healthy()) {
       const token = this.readTokenFile()
